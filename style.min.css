@@ -45,6 +45,7 @@ body{
     font-family: 'Neutral';
     font-size: 18px;
     letter-spacing: 1px;
+    margin-left: 8px;
 }
 .logo .lang{
     display: flex;
@@ -230,6 +231,7 @@ main{
 
 .grin{
     display: flex;
+    margin-bottom: 20px;
 }
 .grin .right{
     display: flex;
@@ -284,44 +286,98 @@ main{
 .grin select{
     width: 100%;
     height: 50px;
-    margin: 14px 0 50px 0;
+    margin: 14px 0 48px 0;
     padding-left: 18px;
     border-color: #cbcbcb;
     outline: none;
     font-family: 'ManropeRegular';
     font-size: 14px;
     color: #8a8a8a;
+    cursor: pointer;
 }
 .grin .cost{
     display: flex;
     justify-content: space-between;
 }
+.grin .cost h2{
+    font-family: 'Neutral';
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.grin .cost input{
+    width: 55%;
+    height: 50px;
+    font-family: 'ManropeRegular';
+    font-size: 14px;
+    color: #8a8a8a;
+    border: 1px solid #cbcbcb;
+    outline: none;
+    padding: 0 20px;
+}
+.grin .cost input:focus{
+    color: #2f2f2f;
+}
 .grin button{
     width: 100%;
     height: 65px;
+    margin-top: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Neutral';
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.grin button:active{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
 }
 .grin .properties{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(191, 191, 191);
     width: 60%;
+    margin: 40px 0 22px 0;
+    font-family: 'ManropeMedium';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+.grin .properties label{
+    cursor: pointer;
+}
 .grin .description{
     border-bottom: 1px solid transparent;
+    color: #8a8a8a;
 }
 .grin .material{
     border-bottom: 1px solid transparent;
+    color: #8a8a8a;
 }
 .grin .uhod{
     border-bottom: 1px solid transparent;
+    color: #8a8a8a;
 }
 #r1:checked ~ .description{
     border-bottom: 1px solid black;
+    color: black;
 }
 #r2:checked ~ .material{
     border-bottom: 1px solid black;
+    color: black;
 }
 #r3:checked ~ .uhod{
     border-bottom: 1px solid black;
+    color: black;
+}
+
+.grin p:last-child{
+    font-family: 'ManropeRegular';
+    font-size: 16px;
+    font-weight: 600;
 }
