@@ -226,3 +226,102 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+.grin{
+    display: flex;
+}
+.grin .right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+}
+.grin .title{
+    margin-top: -12px;
+}
+.grin .right .title h2{
+    font-family: 'Neutral';
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.grin .title{
+    display: flex;
+    justify-content: space-between;
+}
+.grin .rate{
+    display: flex;
+    align-items: center;
+}
+.grin .rate p{
+    font-family: 'ManropeRegular';
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+.grin .subtitle{
+    margin: 26px 0 40px 0;
+}
+.grin .subtitle h3{
+    font-family: 'ManropeRegular';
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.grin .size .head{
+    font-family: 'ManropeRegular';
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.grin .size .head p{
+    font-weight: 600;
+}
+.grin .size .head a{
+    font-weight: 600;
+    color: black;
+}
+.grin select{
+    width: 100%;
+    height: 50px;
+    margin: 14px 0 50px 0;
+    padding-left: 18px;
+    border-color: #cbcbcb;
+    outline: none;
+    font-family: 'ManropeRegular';
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.grin .cost{
+    display: flex;
+    justify-content: space-between;
+}
+.grin button{
+    width: 100%;
+    height: 65px;
+}
+.grin .properties{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    width: 60%;
+}
+
+.grin .description{
+    border-bottom: 1px solid transparent;
+}
+.grin .material{
+    border-bottom: 1px solid transparent;
+}
+.grin .uhod{
+    border-bottom: 1px solid transparent;
+}
+#r1:checked ~ .description{
+    border-bottom: 1px solid black;
+}
+#r2:checked ~ .material{
+    border-bottom: 1px solid black;
+}
+#r3:checked ~ .uhod{
+    border-bottom: 1px solid black;
+}
