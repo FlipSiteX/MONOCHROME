@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(./fonts/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: 'ManropeRegular';
+    src: url(./fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'Neutral';
+    src: url(./fonts/NeutralFace.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+img{
+    filter: contrast(110%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 1170px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.logo h2{
+    font-family: 'Neutral';
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.logo .lang{
+    display: flex;
+    align-items: center;
+}
+.logo nav{
+    display: flex;
+    align-items: center;
+}
+.logo .lang button{
+    background: none;
+    border: none;
+    font-family: 'Neutral';
+    font-size: 14px;
+    cursor: pointer;
+}
+#rubut{
+    margin: 0 12px 0 12px;
+}
+.logo nav a:nth-child(2){
+    margin: 0 22px 0 22px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    width: 100vw;
+    margin-top: 20px;
+}
+.categories a{
+    margin: 18px 35px;
+    text-decoration: none;
+    font-family: 'Neutral';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+}
+.categories a:hover{
+    color: rgb(189, 75, 137);
+}
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.welcome .title{
+    display: flex;
+}
+.welcome .title h1{
+    font-family: 'Neutral';
+    font-size: 138px;
+    font-weight: 500;
+}
+.welcome .title h2{
+    font-family: 'ManropeMedium';
+    font-size: 18px;
+    position: relative;
+    margin-top: 99px;
+    margin-left: 10px;
+}
+.welcome .imgs{
+    display: flex;
+}
+.welcome .imgs img:first-child{
+    margin-left: 10px;
+}
+.welcome .imgs img:last-child{
+    margin-left: 20px;
+}
+
+
+.forev{
+    margin-top: 150px;
+}
+.forev .title{
+    margin-bottom: 60px;
+}
+.forev h2{
+    font-family: 'Neutral';
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.forev .cards_row{
+    display: flex;
+    justify-content: space-between;
+}
+.forev .card h4{
+    font-family: 'ManropeMedium';
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+
+.new_collection{
+    background: url(./img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    margin-top: 140px;
+}
+.new_collection h2{
+    margin-top: 120px;
+    font-family: 'Neutral';
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.new_collection h3{
+    font-family: 'ManropeRegular';
+    font-size: 22px;
+    margin-top: 26px;
+    font-weight: 500;
+}
+.new_collection .url{
+    display: block;
+    margin-top: 80px;
+}
+.new_collection a{
+    padding: 24px 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: 'Neutral';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: .1s;
+}
+.new_collection a:hover{
+    border: 1px white solid;
+    background: none;
+    color: white;
+    font-weight: 600;
+    transition: .1s;
+}
+
+
+.new_season{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+.new_season h2{
+    font-family: 'Neutral';
+    font-size: 70px;
+    font-weight: 500;
+}
+.new_season .cards_row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+.new_season .card h4{
+    margin-top: 18px;
+    font-family: 'ManropeMedium';
+    font-size: 22px;
+}
+.new_season .two_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
